@@ -4,6 +4,7 @@ import { Icon, InlineIcon } from "@iconify/react";
 import menuIcon from "@iconify-icons/mdi/menu";
 
 import "./Header.scss";
+import Backdrop from "../Backdrop/Backdrop";
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,6 +24,7 @@ function Header() {
       <div className="navs">
         <Navigation show={isOpen} onClick={closeSidebar} />
       </div>
+      {isOpen && <Backdrop onClose={closeSidebar} />}
     </nav>
   );
 }
