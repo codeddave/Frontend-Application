@@ -4,7 +4,7 @@ import Header from "./component/Header/Header";
 import Main from "./component/Main/Main";
 import Product from "./component/Product/Product";
 import { createGlobalStyle } from "styled-components";
-import Navigation, { NavContent } from "./component/Navigation/Navigation";
+import { NavContent } from "./component/Navigation/Navigation";
 import { useEffect, useState } from "react";
 const GlobalStyle = createGlobalStyle`
  html, body {

@@ -8,7 +8,6 @@ import Spinner from "../Spinner/Spinner";
 
 function Product() {
   const product = useSelector((state) => state.product.product);
-  const isLoading = useSelector((state) => state.product.isLoading);
   const dispatch = useDispatch();
   const [des, setDes] = useState(true);
   useEffect(() => {
@@ -30,7 +29,7 @@ function Product() {
         <>
           <div className="product">
             <div className="product-details">
-              <img src={product.picture} alt="product-image" />
+              <img src={product.picture} alt={product.name} />
               <div>
                 <p className="product-name">{product.name}</p>
                 <p>{product.type.name}</p>
