@@ -37,8 +37,8 @@ It's not required that the main page has any content. **But it should be the def
   - Attributes
 - Description tab should contain product description
 - Attributes tab should contain:
-  - categories (name only, free text input)
-  - business models (name only, free text input)
+  - categories (name only, free text input when adding/editing)
+  - business models (name only, free text input when adding/editing)
   - [TRL](https://en.wikipedia.org/wiki/Technology_readiness_level) (single choice field)
 - User info should contain:
   - user image
@@ -61,6 +61,8 @@ In the task you will need to fetch some data from an API. The API base url is `h
   - PUT `/product/6781/`
 - TRL List
   - GET `/trl/`
+  
+You can also download the [Postman collections](https://api-test.innoloft.com/postman_collection.json).
 
 ## Technical Requirements
 
@@ -102,3 +104,4 @@ With the api call `/configuration/:appId/` you get the configuration for your `A
 
 - In case `hasUserSection: false` - hide the user info section on the right.
 - Apply main color to header and other elements to your taste
+
