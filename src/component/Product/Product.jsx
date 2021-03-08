@@ -60,7 +60,7 @@ function Product() {
                       <ul>
                         <>
                           {product.categories.map((category) => (
-                            <li>{category.name}</li>
+                            <li key={category.id}>{category.name}</li>
                           ))}
                         </>
                       </ul>
@@ -71,7 +71,7 @@ function Product() {
                       <ul>
                         <>
                           {product.businessModels.map((model) => (
-                            <li>{model.name}</li>
+                            <li key={model.id}>{model.name}</li>
                           ))}
                         </>
                       </ul>
