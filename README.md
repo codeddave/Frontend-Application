@@ -102,4 +102,3 @@ With the api call `/configuration/:appId/` you get the configuration for your `A
 
 - In case `hasUserSection: false` - hide the user info section on the right.
 - Apply main color to header and other elements to your taste
-  > > > > > > > be0fc37a1c1760fbecb4f969c22771fb67fc1bd0
